@@ -64,7 +64,7 @@ RUN apt-get update && \
 
 RUN apt-get update && \
     DEBIAN_FRONTEND=noninteractive apt-get install -y \
-    automake m4 python2.7 gettext bison libssl-dev pkg-config\
+    automake m4 python2.7 gettext curl bison libssl-dev pkg-config\
     && apt-get clean && rm -rf /var/lib/apt/lists/*
 
 RUN ln -s /usr/bin/python2.7 /usr/bin/python
